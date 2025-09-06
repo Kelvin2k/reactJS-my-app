@@ -16,6 +16,7 @@ export default class DemoEvent extends Component {
           //   alert("Nothing happen");
           // }}
           // when calling function that need parameters, we will has an anonymmous function cover outside
+          //test
           onClick={() => {
             showAlert("I wanna say");
           }}  
