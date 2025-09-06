@@ -1,4 +1,6 @@
 import DemoState from "./components/Demo State/DemoState";
+import Exercise1 from "./components/Demo State/Exercise1";
+import Exercise2 from "./components/Demo State/Exercise2";
 import DemoCss from "./components/DemoCSS/DemoCss";
 import DemoEvent from "./components/DemoEvent/DemoEvent";
 import ContentComponent from "./components/Exercise/ContentComponent";
@@ -16,7 +18,7 @@ function App() {
       {/* <Header />
       <Header />
       <Footer /> */}
-      <HomeCommponent />
+      {/* <HomeCommponent />
       <HeaderComponent />
       <div className="row">
         <NavigationComponent />
@@ -25,8 +27,9 @@ function App() {
       <FooterComponent />
       <BindingExercise />
       <DemoEvent />
-      <DemoCss />
-      <DemoState />
+      <DemoCss />      <DemoState /> */}
+      <Exercise1 />
+      <Exercise2 />
     </div>
   );
 }
