@@ -5,7 +5,7 @@ export default class HeaderComponent extends Component {
     const name = "Dong Tran";
     const age = 18;
     const arrNumbmer = [3, 5, 7];
-    const arrJSX = [<div>Hello</div>, <p>Lohe</p>];
+    // const arrJSX = [<div>Hello</div>, <p>Lohe</p>];
     const arrStudent = [
       {
         name: "Name",
@@ -19,7 +19,7 @@ export default class HeaderComponent extends Component {
       <div className="demo">
         {name} this year {age}
         <p>Odd number include {arrNumbmer}</p>
-        <p>{arrJSX}</p>
+        {/* <p>{arrJSX}</p> */}
       </div>
     );
   }

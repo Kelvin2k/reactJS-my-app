@@ -1,3 +1,6 @@
+import DemoState from "./components/Demo State/DemoState";
+import DemoCss from "./components/DemoCSS/DemoCss";
+import DemoEvent from "./components/DemoEvent/DemoEvent";
 import ContentComponent from "./components/Exercise/ContentComponent";
 import FooterComponent from "./components/Exercise/FooterComponent";
 import HeaderComponent from "./components/Exercise/HeaderComponent";
@@ -21,6 +24,9 @@ function App() {
       </div>
       <FooterComponent />
       <BindingExercise />
+      <DemoEvent />
+      <DemoCss />
+      <DemoState />
     </div>
   );
 }
