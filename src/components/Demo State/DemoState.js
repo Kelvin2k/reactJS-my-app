@@ -4,6 +4,7 @@ export default class DemoState extends Component {
   state = {
     number: 10,
   };
+  //push
 
   render() {
     let number = 1;
