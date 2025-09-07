@@ -9,7 +9,7 @@ export default class Exercise2 extends Component {
         movieName: "Trainwreck",
         alias: "trainwreck",
         trailer: "https://www.youtube.com/embed/2MxnhBPoIx4",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/trainwreck.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMizqCQTN-b8fFA49xvgXNOvj4zVFgQb-W7nkVgM9SSCsiBWGgTqTvZOCEzUUWfJRK68cwQQ",
         description:
           "Having thought that monogamy was never possible, a commitment-phobic career woman may have to face her fears when she meets a good guy.",
         group: "GP00",
@@ -105,7 +105,7 @@ export default class Exercise2 extends Component {
         movieName: "True Detective",
         alias: "true-detective",
         trailer: "https://www.youtube.com/embed/TXwCoNwBSkQ",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/truedetective.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkQKhm-d40NgFsusvclHUDDa7CspoPHezZ7mo1L4N9biuoLOM-hG_zOS-s4_ik5mlW-7P",
         description:
           "An anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
         group: "GP00",
@@ -117,7 +117,7 @@ export default class Exercise2 extends Component {
         movieName: "The Longest Ride",
         alias: "the-longest-ride",
         trailer: "https://www.youtube.com/embed/FUS_Q7FsfqU",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/thelongestride.jpg",
+        image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ42siTzecghwdde9pVFlvvUOM0h3AetfVn6qkYw4te4nA_ajuyMRM5nBesm1azpgH-xzPWPQ",
         description:
           "After an automobile crash, the lives of a young couple intertwine with a much older man, as he reflects back on a past love.",
         group: "GP00",
@@ -129,7 +129,7 @@ export default class Exercise2 extends Component {
         movieName: "The Walking Dead",
         alias: "the-walking-dead",
         trailer: "https://www.youtube.com/embed/R1v0uFms68U",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/thewalkingdead.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0ztIY6_LAZTO7MiAI-Nc8vD7b3cSlRl5j5HkSmEaPH66rVkQWaTEhV_MmANYj3_dMAZGA",
         description:
           "Sheriff's Deputy Rick Grimes leads a group of survivors in a world overrun by zombies.",
         group: "GP00",
@@ -141,7 +141,7 @@ export default class Exercise2 extends Component {
         movieName: "Southpaw",
         alias: "southpaw",
         trailer: "https://www.youtube.com/embed/Mh2ebPxhoLs",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/southpaw.jpg",
+        image: "https://resizing.flixster.com/dZPIEYCcrwqN52wjnVcgEp24SFc=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11447189_p_v10_ab.jpg",
         description:
           "Boxer Billy Hope turns to trainer Tick Willis to help him get his life back on track after losing his wife in a tragic accident and his daughter to child protection services.",
         group: "GP00",
@@ -153,7 +153,7 @@ export default class Exercise2 extends Component {
         movieName: "Specter",
         alias: "specter",
         trailer: "https://www.youtube.com/embed/LTDaET-JweU",
-        image: "https://movienew.cybersoft.edu.vn/hinhanh/spectre.jpg",
+        image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRYx4Tn8FthGwo7Duz9TEgK2lclSp-GyZQUll0y9sB2EKhTCNEG7Ytxpi3HABXVZndW_Nn",
         description:
           "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
         group: "GP00",
