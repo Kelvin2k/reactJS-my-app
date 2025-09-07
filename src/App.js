@@ -3,6 +3,7 @@ import Exercise1 from "./components/Demo State/Exercise1";
 import Exercise2 from "./components/Demo State/Exercise2";
 import DemoCss from "./components/DemoCSS/DemoCss";
 import DemoEvent from "./components/DemoEvent/DemoEvent";
+import DemoProps from "./components/DemoProps/DemoProps";
 import ContentComponent from "./components/Exercise/ContentComponent";
 import FooterComponent from "./components/Exercise/FooterComponent";
 import HeaderComponent from "./components/Exercise/HeaderComponent";
@@ -28,8 +29,9 @@ function App() {
       <BindingExercise />
       <DemoEvent />
       <DemoCss />      <DemoState /> */}
-      <Exercise1 />
-      <Exercise2 />
+      {/* <Exercise1 />
+      <Exercise2 /> */}
+      <DemoProps />
     </div>
   );
 }
