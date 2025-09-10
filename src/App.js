@@ -4,6 +4,8 @@ import Exercise2 from "./components/Demo State/Exercise2";
 import DemoCss from "./components/DemoCSS/DemoCss";
 import DemoEvent from "./components/DemoEvent/DemoEvent";
 import DemoProps from "./components/DemoProps/DemoProps";
+import ExerciseProps1 from "./components/DemoProps/ExerciseProps1/ExerciseProps1";
+import ExerciseProps2 from "./components/DemoProps/ExerciseProps2/ExerciseProps2";
 import ContentComponent from "./components/Exercise/ContentComponent";
 import FooterComponent from "./components/Exercise/FooterComponent";
 import HeaderComponent from "./components/Exercise/HeaderComponent";
@@ -32,6 +34,8 @@ function App() {
       {/* <Exercise1 />
       <Exercise2 /> */}
       <DemoProps />
+      <ExerciseProps1 />
+      <ExerciseProps2 />
     </div>
   );
 }

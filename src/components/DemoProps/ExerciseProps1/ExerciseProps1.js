@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ShoeItem from "./ShoeItem";
 
 export default class ExerciseProps1 extends Component {
   render() {
@@ -145,8 +146,15 @@ export default class ExerciseProps1 extends Component {
       },
     ];
     return (
-      <div>
-        <h2>Exercise Props 1 </h2>
+      <div className="container">
+        <h2 className="bg-red-500">Exercise Props 1 </h2>
+        <div>
+          <div className="row">
+            {arrShoes.map((item, index) => {
+              return <ShoeItem shoe={item} key={item.id} />;
+            })}
+          </div>
+        </div>
       </div>
     );
   }
