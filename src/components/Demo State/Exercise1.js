@@ -30,7 +30,7 @@ export default class Exercise1 extends Component {
           <div className="col-8">
             <img
               className="w-100"
-              src={`./image/products/${this.state.carColor}-car.jpg`}
+              src={`./img/products/${this.state.carColor}-car.jpg`}
               alt=""
             />
           </div>
@@ -42,7 +42,7 @@ export default class Exercise1 extends Component {
                 <button
                   onClick={() => {
                     this.setState({
-                        carColor: item.colorCode
+                      carColor: item.colorCode,
                     });
                   }}
                   key={index}

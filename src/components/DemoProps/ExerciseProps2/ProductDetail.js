@@ -11,7 +11,7 @@ export default class ProductDetail extends Component {
           <img src={image} alt="" />
         </div>
         <div className="w-8/12 space-y-5">
-          <h3 className="font-bold text-3xl">{os}</h3>
+          <h3 className="font-bold text-3xl">{name}</h3>
           <div className="grid grid-cols-2 text-xl">
             <p className="font-bold">Screen:</p>
             <p>{screen}</p>
