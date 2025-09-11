@@ -31,11 +31,11 @@ function App() {
       <BindingExercise />
       <DemoEvent />
       <DemoCss />      <DemoState /> */}
-      {/* <Exercise1 />
-      <Exercise2 /> */}
-      <DemoProps />
-      <ExerciseProps1 />
-      <ExerciseProps2 />
+      {/* <Exercise1 /> */}
+      <Exercise2 />
+      {/* <DemoProps /> */}
+      {/* <ExerciseProps1 /> */}
+      {/* <ExerciseProps2 /> */}
     </div>
   );
 }

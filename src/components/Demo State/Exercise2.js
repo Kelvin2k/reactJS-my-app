@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import background from "./../../assets/images/avenger.jpg";
 
 export default class Exercise2 extends Component {
+  // helper: truncate text and add ellipsis
+  truncateText = (text, maxLength) => {
+    if (!text) return "";
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + "...";
+  };
+
   render() {
     const arrMovie = [
       {
@@ -9,7 +16,8 @@ export default class Exercise2 extends Component {
         movieName: "Trainwreck",
         alias: "trainwreck",
         trailer: "https://www.youtube.com/embed/2MxnhBPoIx4",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMizqCQTN-b8fFA49xvgXNOvj4zVFgQb-W7nkVgM9SSCsiBWGgTqTvZOCEzUUWfJRK68cwQQ",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMizqCQTN-b8fFA49xvgXNOvj4zVFgQb-W7nkVgM9SSCsiBWGgTqTvZOCEzUUWfJRK68cwQQ",
         description:
           "Having thought that monogamy was never possible, a commitment-phobic career woman may have to face her fears when she meets a good guy.",
         group: "GP00",
@@ -105,7 +113,8 @@ export default class Exercise2 extends Component {
         movieName: "True Detective",
         alias: "true-detective",
         trailer: "https://www.youtube.com/embed/TXwCoNwBSkQ",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkQKhm-d40NgFsusvclHUDDa7CspoPHezZ7mo1L4N9biuoLOM-hG_zOS-s4_ik5mlW-7P",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkQKhm-d40NgFsusvclHUDDa7CspoPHezZ7mo1L4N9biuoLOM-hG_zOS-s4_ik5mlW-7P",
         description:
           "An anthology series in which police investigations unearth the personal and professional secrets of those involved, both within and outside the law.",
         group: "GP00",
@@ -117,7 +126,8 @@ export default class Exercise2 extends Component {
         movieName: "The Longest Ride",
         alias: "the-longest-ride",
         trailer: "https://www.youtube.com/embed/FUS_Q7FsfqU",
-        image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ42siTzecghwdde9pVFlvvUOM0h3AetfVn6qkYw4te4nA_ajuyMRM5nBesm1azpgH-xzPWPQ",
+        image:
+          "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ42siTzecghwdde9pVFlvvUOM0h3AetfVn6qkYw4te4nA_ajuyMRM5nBesm1azpgH-xzPWPQ",
         description:
           "After an automobile crash, the lives of a young couple intertwine with a much older man, as he reflects back on a past love.",
         group: "GP00",
@@ -129,7 +139,8 @@ export default class Exercise2 extends Component {
         movieName: "The Walking Dead",
         alias: "the-walking-dead",
         trailer: "https://www.youtube.com/embed/R1v0uFms68U",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0ztIY6_LAZTO7MiAI-Nc8vD7b3cSlRl5j5HkSmEaPH66rVkQWaTEhV_MmANYj3_dMAZGA",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq0ztIY6_LAZTO7MiAI-Nc8vD7b3cSlRl5j5HkSmEaPH66rVkQWaTEhV_MmANYj3_dMAZGA",
         description:
           "Sheriff's Deputy Rick Grimes leads a group of survivors in a world overrun by zombies.",
         group: "GP00",
@@ -141,7 +152,8 @@ export default class Exercise2 extends Component {
         movieName: "Southpaw",
         alias: "southpaw",
         trailer: "https://www.youtube.com/embed/Mh2ebPxhoLs",
-        image: "https://resizing.flixster.com/dZPIEYCcrwqN52wjnVcgEp24SFc=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11447189_p_v10_ab.jpg",
+        image:
+          "https://resizing.flixster.com/dZPIEYCcrwqN52wjnVcgEp24SFc=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11447189_p_v10_ab.jpg",
         description:
           "Boxer Billy Hope turns to trainer Tick Willis to help him get his life back on track after losing his wife in a tragic accident and his daughter to child protection services.",
         group: "GP00",
@@ -153,7 +165,8 @@ export default class Exercise2 extends Component {
         movieName: "Specter",
         alias: "specter",
         trailer: "https://www.youtube.com/embed/LTDaET-JweU",
-        image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRYx4Tn8FthGwo7Duz9TEgK2lclSp-GyZQUll0y9sB2EKhTCNEG7Ytxpi3HABXVZndW_Nn",
+        image:
+          "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRYx4Tn8FthGwo7Duz9TEgK2lclSp-GyZQUll0y9sB2EKhTCNEG7Ytxpi3HABXVZndW_Nn",
         description:
           "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
         group: "GP00",
@@ -175,39 +188,37 @@ export default class Exercise2 extends Component {
       },
     ];
     const renderListMovie = () => {
-    //   let newArrMovie = [];
       return arrMovie.map((item, index) => {
         return (
-          <div key={item.movieId} className="col-4">
-            <div className="content bg-white text-center p-3">
-              <img className="w-100" src={item.image} alt="" />
-              <h3>{item.movieName}</h3>
-              <p>{item.description}</p>
+          <div key={item.movieId} className="col-span-1 ">
+            <div className="bg-gray-500 text-center rounded-lg shadow-lg w-80 h-96 flex flex-col">
+              <img
+                className="w-full h-56 object-cover object-top rounded-t-lg "
+                src={item.image}
+                alt={item.movieName}
+              />
+              <h3 className="text-lg font-bold mt-2 text-white">
+                {item.movieName}
+              </h3>
+              <p className="text-white text-sm text-gray-600 mt-1 flex-1 line-clamp-3 pt-3 px-3 ">
+                {this.truncateText(item.description, 100)}
+              </p>
             </div>
           </div>
         );
       });
-    //   console.log("newArrMovie",newArrMovie)
-    //   return arrMovie;
     };
     return (
       <div
+        className="min-h-screen bg-center bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${background})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
         }}
-        // className="container"
       >
-        <h2>Demo State Exercise 2</h2>
-        <div className="row g-5">
-          {/* <div className="col-4">
-            <div className="content">
-              <img src="" alt="" />
-              <h3></h3>
-              <p></p>
-            </div>
-          </div> */}
+        <h2 className="text-2xl font-bold text-white text-center py-4">
+          Demo State Exercise 2
+        </h2>
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 place-items-center ">
           {renderListMovie()}
         </div>
       </div>
