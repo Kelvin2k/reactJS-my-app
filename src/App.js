@@ -3,6 +3,7 @@ import Exercise1 from "./components/Demo State/Exercise1";
 import Exercise2 from "./components/Demo State/Exercise2";
 import DemoCss from "./components/DemoCSS/DemoCss";
 import DemoEvent from "./components/DemoEvent/DemoEvent";
+import DemoForm from "./components/DemoForm/DemoForm";
 import DemoProps from "./components/DemoProps/DemoProps";
 import ExerciseProps1 from "./components/DemoProps/ExerciseProps1/ExerciseProps1";
 import ExerciseProps2 from "./components/DemoProps/ExerciseProps2/ExerciseProps2";
@@ -32,10 +33,11 @@ function App() {
       <DemoEvent />
       <DemoCss />      <DemoState /> */}
       {/* <Exercise1 /> */}
-      <Exercise2 />
+      {/* <Exercise2 /> */}
       {/* <DemoProps /> */}
       {/* <ExerciseProps1 /> */}
       {/* <ExerciseProps2 /> */}
+      <DemoForm />
     </div>
   );
 }
