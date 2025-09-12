@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class TableUser extends Component {
   render() {
+    const { arrUser, handleDeleteValue } = this.props;
     return (
       <div>
         <div className="relative overflow-x-auto">
@@ -32,20 +33,19 @@ export default class TableUser extends Component {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-gray-400"
                 >
-                  SE140321"
+                  SE140321
                 </th>
                 <td className="px-6 py-4">Truong Tan Khai</td>
                 <td className="px-6 py-4">0903265695</td>
                 <td className="px-6 py-4">khaiga@gmail.com</td>
                 <td className="px-6 py-4">Employee</td>
                 <td className="px-6 py-4">unknown</td>
-                <td className="px-6 py-4 space-x-5"></td>
-                <td>
+                <td className="px-6 py-4 space-x-5">
                   <button>
                     <ion-icon
                       color="warning"
@@ -62,6 +62,51 @@ export default class TableUser extends Component {
                   </button>
                 </td>
               </tr>
+              {arrUser.map((item, index) => {
+                const {
+                  userCode,
+                  userName,
+                  phoneNumber,
+                  email,
+                  jobTitle,
+                  sex,
+                } = item;
+                return (
+                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                    <th
+                      scope="row"
+                      className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-gray-400"
+                    >
+                      {userCode}
+                    </th>
+                    <td className="px-6 py-4">{userName}</td>
+                    <td className="px-6 py-4">{phoneNumber}</td>
+                    <td className="px-6 py-4">{email}</td>
+                    <td className="px-6 py-4">{jobTitle}</td>
+                    <td className="px-6 py-4">{sex}</td>
+                    <td className="px-6 py-4 space-x-5">
+                      <button>
+                        <ion-icon
+                          color="warning"
+                          size="large"
+                          name="create-outline"
+                        ></ion-icon>
+                      </button>
+                      <button
+                        onClick={() => {
+                          handleDeleteValue(userCode);
+                        }}
+                      >
+                        <ion-icon
+                          color="danger"
+                          size="large"
+                          name="trash-outline"
+                        ></ion-icon>
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

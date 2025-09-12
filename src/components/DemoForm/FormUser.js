@@ -6,11 +6,11 @@ export default class FormUser extends Component {
   render() {
     // console.log(this.props);
     // Destructuring
-    const { errors, users, handleOnChangValue } = this.props;
+    const { errors, users, handleOnChangValue, handleSubmitValue } = this.props;
 
     return (
       <div>
-        <form action>
+        <form onSubmit={handleSubmitValue} action>
           <div className="grid grid-cols-2 gap-2">
             <div className="w-full px-3 mb-6 md:mb-0">
               <label
@@ -26,7 +26,7 @@ export default class FormUser extends Component {
                 placeholder="Please input user code"
                 value={users.userCode}
                 onChange={(event) => {
-                  const {value,id} = event.target 
+                  const { value, id } = event.target;
                   handleOnChangValue(value, id);
                 }}
               />
@@ -46,8 +46,8 @@ export default class FormUser extends Component {
                 placeholder="Please input user name"
                 value={users.userName}
                 onChange={(event) => {
-                  const {value,id} = event.target
-                  handleOnChangValue(value,id)
+                  const { value, id } = event.target;
+                  handleOnChangValue(value, id);
                 }}
               />
               <p className="text-red-500 text-xs italic">{errors.userName}</p>
@@ -66,8 +66,8 @@ export default class FormUser extends Component {
                 placeholder="Jane"
                 value={users.phoneNumber}
                 onChange={(event) => {
-                  const {value,id} = event.target
-                  handleOnChangValue(value,id)
+                  const { value, id } = event.target;
+                  handleOnChangValue(value, id);
                 }}
               />
               <p className="text-red-500 text-xs italic">
@@ -88,8 +88,8 @@ export default class FormUser extends Component {
                 placeholder="Jane"
                 value={users.email}
                 onChange={(event) => {
-                  const {value,id} = event.target
-                  handleOnChangValue(value,id)
+                  const { value, id } = event.target;
+                  handleOnChangValue(value, id);
                 }}
               />
               <p className="text-red-500 text-xs italic">{errors.email}</p>
@@ -107,8 +107,8 @@ export default class FormUser extends Component {
                   id="jobTitle"
                   value={users.jobTitle}
                   onChange={(event) => {
-                    const {value,id} = event.target
-                    handleOnChangValue(value,id)
+                    const { value, id } = event.target;
+                    handleOnChangValue(value, id);
                   }}
                 >
                   <option value="">Select job title</option>
@@ -141,8 +141,8 @@ export default class FormUser extends Component {
                   id="sex"
                   value={users.sex}
                   onChange={(event) => {
-                    const {value,id} = event.target
-                    handleOnChangValue(value,id)
+                    const { value, id } = event.target;
+                    handleOnChangValue(value, id);
                   }}
                 >
                   <option value="">Select sex</option>
