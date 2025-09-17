@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FormUser from "./FormUser";
 import TableUser from "./TableUser";
+import { checkEmptyValue } from "../../util/validation";
 
 export default class DemoForm extends Component {
   // Create a user management interface to add users to a table.
@@ -35,12 +36,21 @@ export default class DemoForm extends Component {
   };
 
   handleOnChangValue = (value, id) => {
+    // validation data
+    // 1. Create a newError from state
+    // 2. Use validation function to check data and insert error notification into newError
+    // 3. use setState method to update to state
+    let newError = { ...this.state.errors };
     // 1. Clone the current users object from state to avoid direct mutation.
+    // let newError = { ...this.state.errors };
     let newUsers = { ...this.state.users };
 
     // 2. Update the property in newUsers that matches the input's id with the new value.
     //    For example, if id is "userCode", it sets newUsers.userCode = value.
     newUsers[id] = value;
+
+    //Check data: check empty value
+    let checkEmpty = checkEmptyValue(value, id, newError);
 
     // 3. Update the state with the modified users object.
     //    This triggers a re-render so the UI reflects the latest input.
@@ -48,6 +58,7 @@ export default class DemoForm extends Component {
     // id = userCode // SE1456
     this.setState({
       users: newUsers,
+      errors: newError,
     });
   };
 
@@ -88,6 +99,8 @@ export default class DemoForm extends Component {
 
   render() {
     // console.log("this.state.users", this.state.users);
+    console.log(this.state.errors);
+
     console.log(this.state.arrUser);
     return (
       <div className="container">
