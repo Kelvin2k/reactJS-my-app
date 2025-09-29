@@ -6,11 +6,19 @@ export default class FormUser extends Component {
   render() {
     // console.log(this.props);
     // Destructuring props
-    const { errors, users, handleOnChangValue, handleSubmitValue } = this.props;
+    const {
+      errors,
+      users,
+      handleOnChangValue,
+      handleSubmitValue,
+      handleUpdateValue,
+      isUserCodeDisabled
+    } = this.props;
+    console.log("handleUpdateValue", handleUpdateValue);
 
     return (
       <div>
-        <form onSubmit={handleSubmitValue} action>
+        <form id="form_user" onSubmit={handleSubmitValue} action="">
           <div className="grid grid-cols-2 gap-2">
             <div className="w-full px-3 mb-6 md:mb-0">
               <label
@@ -25,6 +33,7 @@ export default class FormUser extends Component {
                 type="text"
                 placeholder="Please input user code"
                 value={users.userCode}
+                disabled={isUserCodeDisabled}
                 onChange={(event) => {
                   const { value, id } = event.target;
                   handleOnChangValue(value, id);
@@ -42,12 +51,19 @@ export default class FormUser extends Component {
               <input
                 className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                 id="userName"
+                // data attribute
+                data-validation="string"
                 type="text"
                 placeholder="Please input user name"
                 value={users.userName}
                 onChange={(event) => {
+                  // event
                   const { value, id } = event.target;
-                  handleOnChangValue(value, id);
+                  // call to data attribute of html element
+                  let valueAttribute =
+                    event.target.getAttribute("data-validation");
+                  console.log(valueAttribute);
+                  handleOnChangValue(value, id, valueAttribute);
                 }}
               />
               <p className="text-red-500 text-xs italic">{errors.userName}</p>
@@ -173,6 +189,10 @@ export default class FormUser extends Component {
             <button
               type="button"
               className="py-2 px-5 rounded-md bg-yellow-500 text-black ml-4"
+              onClick={() => {
+                console.log("hello")
+                handleUpdateValue()
+              }}
             >
               Update user
             </button>
