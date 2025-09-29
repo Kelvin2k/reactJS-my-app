@@ -31,6 +31,7 @@ export default class TableUser extends Component {
                   Action
                 </th>
               </tr>
+              <h2 className="text-ellipsis"></h2>
             </thead>
             <tbody>
               <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
