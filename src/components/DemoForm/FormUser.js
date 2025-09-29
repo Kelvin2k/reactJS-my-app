@@ -5,7 +5,7 @@ export default class FormUser extends Component {
 
   render() {
     // console.log(this.props);
-    // Destructuring
+    // Destructuring props
     const { errors, users, handleOnChangValue, handleSubmitValue } = this.props;
 
     return (
