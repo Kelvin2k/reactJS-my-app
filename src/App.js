@@ -1,3 +1,4 @@
+import DemoRedux from "./components/Demo Redux/DemoRedux";
 import DemoState from "./components/Demo State/DemoState";
 import Exercise1 from "./components/Demo State/Exercise1";
 import Exercise2 from "./components/Demo State/Exercise2";
@@ -37,7 +38,8 @@ function App() {
       {/* <DemoProps /> */}
       {/* <ExerciseProps1 /> */}
       {/* <ExerciseProps2 /> */}
-      <DemoForm />
+      {/* <DemoForm /> */}
+      <DemoRedux />
     </div>
   );
 }
