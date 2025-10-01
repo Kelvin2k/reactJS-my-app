@@ -1,0 +1,12 @@
+@font-face{
+    font-family: Pony;
+    src:url("./../../../assets/GamblingGame/img/Pony.ttf")
+}
+
+.bg_DiceGame {
+    font-family: Pony;
+    background-image: url('./../../../assets/GamblingGame/img/bgGame.png');
+    height: 100vh;
+    padding: 80px 0;
+    text-align: center;
+}

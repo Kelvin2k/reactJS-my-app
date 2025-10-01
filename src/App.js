@@ -1,4 +1,5 @@
-import DemoRedux from "./components/Demo Redux/DemoRedux";
+import DemoRedux from "./components/DemoRedux/DemoRedux";
+import GamblingGame from "./components/DemoRedux/GamblingGame/DiceGame";
 import DemoState from "./components/Demo State/DemoState";
 import Exercise1 from "./components/Demo State/Exercise1";
 import Exercise2 from "./components/Demo State/Exercise2";
@@ -39,7 +40,8 @@ function App() {
       {/* <ExerciseProps1 /> */}
       {/* <ExerciseProps2 /> */}
       {/* <DemoForm /> */}
-      <DemoRedux />
+      {/* <DemoRedux /> */}
+      <GamblingGame />
     </div>
   );
 }
