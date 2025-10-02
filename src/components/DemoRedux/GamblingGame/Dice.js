@@ -1,21 +1,26 @@
 import React, { Component } from 'react'
-import Dice1 from './../../../assets/GamblingGame/img/1.png'
-import Dice2 from './../../../assets/GamblingGame/img/2.png'
-import Dice3 from './../../../assets/GamblingGame/img/3.png'
-import Dice4 from './../../../assets/GamblingGame/img/4.png'
-import Dice5 from './../../../assets/GamblingGame/img/5.png'
-import Dice6 from './../../../assets/GamblingGame/img/6.png'
+import { connect } from 'react-redux'
 
-
-
-export default class Dice extends Component {
+class Dice extends Component {
   render() {
+    console.log(this.props)
     return (
       <div className='flex space-x-3 bg-white h-20'>
-        <img className='h-20' src={Dice1} alt="" />
-        <img className='h-20' src={Dice1} alt="" />
-        <img className='h-20' src={Dice1} alt="" />
+        {/* <img className='h-20' src={"./img/Dice/1.png"} alt="" />
+        <img className='h-20' src={"./img/Dice/3.png"} alt="" />
+        <img className='h-20' src={"./img/Dice/6.png"} alt="" /> */}
+        {this.props.diceList.map((item, index) => {
+          return <img key={index} className='h-20' src={`./img/Dice/${item.dice}.png`} alt="" />;
+        })}
       </div>
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    diceList: state.diceGame.listDice
+  }
+}
+
+export default connect(mapStateToProps)(Dice)
