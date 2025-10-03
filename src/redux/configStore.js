@@ -16,7 +16,7 @@
 // Create store holding data
 import { configureStore } from "@reduxjs/toolkit";
 import DiceGame from "../components/DemoRedux/GamblingGame/DiceGame";
-import { diceGame } from "./reducer/diceGame";
+import { diceGame, initialDiceGameState } from "./reducer/diceGame";
 
 export const store = configureStore({
   reducer: {
@@ -30,6 +30,7 @@ export const store = configureStore({
       return "Michael";
     },
     // diceGame: DiceGame,
-    diceGame
+    diceGame,
+
   },
 });
