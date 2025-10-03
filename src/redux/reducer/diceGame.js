@@ -16,7 +16,8 @@ export const diceGame = (state = initialState, action) => {
       // action.payLoad = true || false
       // When changing value of state, redux does not know state is changing or not so when change we need to clone current state first, then we make change on clone of sate and return that clone state
       const newState = { ...state };
-      newState.youSelect = action.payLoad;
+      newState.youSelect = action.payload;
+      console.log(newState.youSelect)
       return newState;
     }
     case "START_GAME": {
