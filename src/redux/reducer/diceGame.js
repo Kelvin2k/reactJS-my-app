@@ -46,6 +46,7 @@ export const diceGame = (state = initialState, action) => {
     }
     default: {
       return state;
+      // test
     }
   }
 };
