@@ -23,7 +23,6 @@ export const store = configureStore({
     // demo about storing data in store
     name: (state, action) => {
       // catch signal dispatch sent from component
-      console.log(action);
       if (action.type === "CHANGE_NAME") {
         return action.payload;
       }

@@ -17,6 +17,8 @@ import NavigationComponent from "./components/Exercise/NavigationComponent";
 import BindingExercise from "./components/ExerciseBindingData/BindingExercise";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import LifeCycle from "./components/LifeCycle.js/LifeCycle";
+import FormLogin from "./components/FormLogin/FormLogin";
 
 function App() {
   return (
@@ -41,7 +43,9 @@ function App() {
       {/* <ExerciseProps2 /> */}
       {/* <DemoForm /> */}
       {/* <DemoRedux /> */}
-      <GamblingGame />
+      {/* <GamblingGame /> */}
+      {/* <LifeCycle /> */}
+      <FormLogin />
     </div>
   );
 }
